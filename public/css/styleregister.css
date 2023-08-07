@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    text-align: center;
+}
+
+.box {
+
+    background: #B5DEFF;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px 20px 20px 20px;
+    height: 500px;
+    width: 600px;
+    padding: 60px;
+    margin: 10px;
+    outline: 10px;
+
+}
+
+input[type="submit"] {
+    display: block;
+    background: white;
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    color: #757575;
+    border: 0px;
+    margin: auto;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: white;
+}
+
+.regis-form {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1.2em 0;
+}
+
+.form-select {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1.2em 0;
+}
+
+
+input,
+label {
+    transition: 0.4s ease;
+}
+
+label {
+    padding-left: 10px;
+    transform: translate(4px, -14px) scale(1.02);
+    margin-bottom: 2px;
+    cursor: text;
+    transform-origin: left top;
+    color: #757575;
+    position: absolute;
+}
+
+select {
+    font-size: 1em;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-bottom: 2px solid #9e9e9e;
+    outline: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+input {
+    font-size: 1em;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-bottom: 2px solid #9e9e9e;
+    outline: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+input::placeholder {
+    opacity: 0;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+    border-bottom: 2px solid #000000;
+}
+
+
+input:not(:placeholder-shown)~label,
+input:focus~label {
+    transform: translate(10px, -35px) scale(0.8);
+    padding-left: 0px;
+    color: black;
+}
