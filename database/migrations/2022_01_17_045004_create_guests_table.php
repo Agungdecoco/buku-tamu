@@ -15,15 +15,13 @@ class CreateGuestsTable extends Migration
     {
         Schema::create('guests', function (Blueprint $table) {
             $table->char('nip')->primary();
-            // $table->foreignId('users_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
-            $table->char('users_id');
+            $table->foreignId('users_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            // $table->char('users_id');
             $table->string('nama_tamu');
             $table->char('tlp_tamu')->nullable();
-            // $table->string('email_tamu');
             $table->string('jabatan_tamu')->nullable();
             $table->string('instansi')->nullable();
             // $table->string('status');
-            // $table->string('password');
             $table->string('foto')->nullable();
             $table->timestamps();
         });
