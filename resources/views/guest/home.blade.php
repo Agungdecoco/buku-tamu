@@ -27,11 +27,11 @@
             <div class="col-md-12">
                 <div class="card body shadow rounded" style="left: 2%;">
                     <div class="card-body border border-secondary" style="background-color: #DCD6F7">
+                        <h4>Konsultan Yang Aktif</h4>
                         <div class="consultant-image mt-3 pb-3 mb-3 d-flex justify-content-evenly">
                             @foreach ($consultants as $consultant)
                                 <div class="card-img-top"
                                     style="display: block; max-width: 100%; height: auto; width: 200px;">
-                                    <h4>Konsultan Yang Aktif</h4>
                                     <img src="/assets/dist/img/avatar.png" class="img-circle elevation-2"
                                         style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;"
                                         alt="consultant Image" width="106">

@@ -42,7 +42,7 @@
         </div>
 
         <div id="dashboard">
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-lg-4 margin-tb">
                     <canvas id="total_done" width="200" height="200"></canvas>
                 </div>
@@ -180,7 +180,7 @@
                     data: data3,
                     options: options3
                 });
-            </script>
+            </script> --}}
 
             <div class="row">
                 <div class="col-lg-6 margin-tb">
